@@ -21,8 +21,8 @@ function lawOfLarges(num) {
 
     headCountPercent = (headCount/num)*100;
     tailCountPercent = (tailCount/num)*100;
-    hcp = Math.round(headCountPercent*100)/100;
-    tcp = Math.round(tailCountPercent*100)/100;
+    hcp = headCountPercent.toFixed(2);
+    tcp = tailCountPercent.toFixed(2);
 
     if (tcp == hcp && headCount == tailCount) {
         return [headCount, "<b>"+hcp+"%</b>", tailCount, "<b>"+tcp+"%</b>"];
@@ -32,8 +32,12 @@ function lawOfLarges(num) {
 }
 
 function rerollBtn() {
-    num = fillTable(document.getElementById("baseNumber").value);
-    fillTable(num);
+    num = document.getElementById("baseNumber").value
+    if (num > 10000) {
+        alert("Maximum Base Number is 10000.");
+    } else {
+        fillTable(num);
+    }
 }
 
 function fillTable(num) {
