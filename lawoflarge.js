@@ -24,7 +24,7 @@ function lawOfLarges(num) {
     hcp = Math.round(headCountPercent*100)/100;
     tcp = Math.round(tailCountPercent*100)/100;
 
-    if (tcp == hcp) {
+    if (tcp == hcp && headCount == tailCount) {
         return [headCount, "<b>"+hcp+"%</b>", tailCount, "<b>"+tcp+"%</b>"];
     }
 
