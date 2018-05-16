@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(168, 168, 168);
+}
+
+#logo {
+    font-size: 64px;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: darkred;
+}
+
+th, td {
+    padding: 3px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+ }
+
+#parentContainer {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 25px;
+}
