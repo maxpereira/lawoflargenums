@@ -1,1 +1,4 @@
 # Law of Large Numbers Exploration
+This is a small web experiment based on the Law of Large Numbers. From Wikipedia, the law of large numbers is a principle of probability according to which the frequencies of events with the same likelihood of occurrence even out, given enough trials or instances. As the number of experiments increases, the actual ratio of outcomes will converge on the theoretical, or expected, ratio of outcomes.
+
+In my experiment, we have six trials. Each trial flips ten times the previous trial's amount of coins. The percentages for high numbers of tosses compared to low numbers of tosses help to show the law of large numbers in action.
